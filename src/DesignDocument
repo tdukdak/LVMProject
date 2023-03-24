@@ -1,0 +1,4 @@
+LVM class to construct name and UUID for every future drive
+PHD(physical Hard Drive) extending LVM to construct the bottom of the hierarchy and also implemented ArrayList
+PV(physical volume) also extending LVM and using a PHD private instance variable that will be designated to each PV. Also another array list of PV
+VG(volume groups) also extending LVM uses

@@ -9,6 +9,6 @@ public class VG extends LVM {
         this.storedPV = storedPV;
     }
 
-    public int getSize()
+
 
 }
