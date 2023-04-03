@@ -1,19 +1,17 @@
 import java.util.UUID;
+import java.util.ArrayList;
 
-class PHD {
+class LV extends VG{
     private String name;
     private String uuid;
     private int size;
+    private VG volumeGroup;
 
-    public PHD(String name, int size) {
+    public LV(String name, int size, VG volumeGroup) {
         this.name = name;
         this.uuid = UUID.randomUUID().toString();
         this.size = size;
-    }
-    public PHD() {
-        this.name = null;
-        this.uuid =null;
-        this.size = 0;
+        this.volumeGroup = volumeGroup;
     }
 
     public String getName() {
@@ -26,5 +24,9 @@ class PHD {
 
     public int getSize() {
         return size;
+    }
+
+    public VG getVG() {
+        return volumeGroup;
     }
 }
